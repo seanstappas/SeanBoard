@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.seanstappas.seanboard.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="263dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <com.seanstappas.seanboard.PlayButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_1"
+                android:id="@+id/playBtn1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.33" />
+
+            <com.seanstappas.seanboard.PlayButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_2"
+                android:id="@+id/playBtn2"
+                android:layout_alignBottom="@+id/button"
+                android:layout_toRightOf="@+id/button"
+                android:layout_toEndOf="@+id/button"
+                android:layout_weight="0.33" />
+
+            <com.seanstappas.seanboard.PlayButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_3"
+                android:id="@+id/playBtn3"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toRightOf="@+id/button2"
+                android:layout_toEndOf="@+id/button2"
+                android:layout_weight="0.33" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal">
+
+            <com.seanstappas.seanboard.RecordButton
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:id="@+id/recordButton1"
+                android:src="@mipmap/record"
+                android:background="#ffffff"
+                android:tag="0"
+                />
+
+            <com.seanstappas.seanboard.RecordButton
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:id="@+id/recordButton2"
+                android:src="@mipmap/record"
+                android:background="#ffffff"
+                android:tag="1" />
+
+            <com.seanstappas.seanboard.RecordButton
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:id="@+id/recordButton3"
+                android:src="@mipmap/record"
+                android:background="#ffffff"
+                android:tag="2" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <SeekBar
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar1"
+                android:indeterminate="false"
+                android:layout_marginTop="34dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <SeekBar
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <SeekBar
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar3"
+                android:indeterminate="false"
+                android:layout_marginTop="68dp"
+                android:layout_below="@+id/seekBar2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

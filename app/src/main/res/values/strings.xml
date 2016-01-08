@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SeanBoard</string>
+    <string name="play_1">1</string>
+    <string name="record_1">record_1</string>
+    <string name="play_2">2</string>
+    <string name="play_3">3</string>
+</resources>
